@@ -131,7 +131,7 @@ p {
   letter-spacing: 1.25px;
 }
 .button-second:hover {
-  color: white;
+  color:hotpink;
 }
 
 .button-second:hover .flechita {
