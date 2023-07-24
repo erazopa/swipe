@@ -78,6 +78,7 @@ p {
   font-size: 16px;
   line-height: 26px;
   box-sizing: border-box;
+  margin: 16px 0;
 }
 .two-columns {
   width: 100%;
@@ -230,6 +231,9 @@ p {
   width: 100%;
   max-width: 1144px;
 }
+.articles {
+  padding: 32px;
+}
 
 #credit-card {
   width: 100%;
@@ -250,7 +254,141 @@ p {
   padding: 20px 30px 20px 30px;
 }
 
-@media screen and (min-width: 551px) {
+.third-part {
+  color:white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: calc(64px * 3) 0;
+  z-index: 1;
+    
+}
+
+.third-part::before {
+content: "";
+width: 100%;
+height: 1100px;
+background-color: #0a2540;
+position: absolute;
+top: -32px;
+left: 0px;
+z-index: -1;
+transform: skewY(-10deg);
+}
+
+.container-three {
+  max-width: 1144px;
+  
+}
+
+.twocolumn {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-direction: row;
+box-sizing: border-box;
+
+}
+
+.twocolumn .section-left3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-right: 16px;
+  box-sizing: border-box;
+  }
+
+  .subtitle3 {
+color: #32e2f1;
+font-family: Arial, sans-serif;
+font-weight: 500;
+font-size:  17px;
+line-height: 26px;
+margin: 16px 0;
+  }
+
+  .subtitle3-a {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    margin: 0;
+    width: 100%;
+    font-size:31px ;
+    line-height: 50px;
+  }
+
+.section-left3 .button-start {
+  margin: 12px 0px;
+  font-weight: 900;
+  background-color: #32e2f1;
+  color:#0a2540;
+  }
+
+.third-part .image-section3 {
+display: flex;
+flex-direction: column;
+margin: 22px 0px;
+}
+
+.image-tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 16px 8px 0px;
+
+}
+.third-part .image-section3 .image-tools {
+  width: 100%;
+}
+
+.image-tools .tools {
+  height: 50px;
+  margin-bottom: 8px;
+  }
+
+.image-tools .flechita {
+  height: 24px;
+}
+
+.image-tools h4 {
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  width: 100%;
+  }
+
+.tools-text {
+  color: #adbdcc;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+  }
+
+.third-part .button-second {
+  color: #32e2f1;
+  font-size: 15px;
+  padding: 0;
+  }
+
+.image-code {
+  display: none;
+  }
+
+
+  .button-start:hover {
+background-color: darkcyan;
+  }
+
+.section-left3 .button-start:hover  {
+  background-color: white;
+  }
+  
+
+  @media screen and (min-width: 551px) {
   /* cuatro columnas-celular aparece */
   .menu {
     margin-bottom: 35px;
@@ -267,10 +405,7 @@ p {
   p {
     font-size: 25px;
     line-height: 25px;
-    margin-bottom: 20px;
-    margin-top: 0px;
-    margin-left: 9px;
-    margin-right: 0px;
+  margin: 16px 0;
   }
 
   .section-right {
@@ -425,7 +560,7 @@ p {
       "phone slack slack"
       "phone dash dash";
     grid-gap: 32px;
-    padding: 32px;
+    
   }
 
   #credit-card {
@@ -433,6 +568,7 @@ p {
     width: 100%;
     box-shadow: 0px 2px 40px rgba(115, 18, 104, 0.311);
     border-radius: 20px;
+    padding: 0px;
   }
 
   #slack {
@@ -440,11 +576,13 @@ p {
     width: 100%;
     box-shadow: 0px 2px 40px rgba(115, 18, 104, 0.311);
     border-radius: 20px;
+    padding: 0px;
   }
 
   #phone {
     grid-area: phone;
     width: 100%;
+    padding: 0px;
   }
 
   #dash {
@@ -452,7 +590,36 @@ p {
     width: 100%;
     box-shadow: 0px 2px 40px rgba(115, 18, 104, 0.311);
     border-radius: 20px;
+    padding: 0px;
   }
+/* tercera seccion */
+.third-part .image-section3 {
+flex-direction: row;
+}
+
+#code {
+  max-width: 480px;
+  margin-bottom: 16px;
+  border-radius: 20px;
+}
+
+#terminal {
+  max-width: 480px;
+  border-radius: 20px;
+}
+
+.twocolumn .image-code {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 16px;
+  box-sizing: border-box;
+}
+
+
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -524,4 +691,35 @@ p {
   .second-two-columns a:hover {
     color: hotpink;
   }
+}
+
+/* tercera seccion */
+@media (min-width:1025px) and (max-width:1440px) {
+  .twocolumn .image-code {
+    margin: 0px 64px;
+    }
+  }
+    @media only screen and (max-width:850px) {
+  .third-part .image-code {
+    width: 40%;
+    
+  }      
+    }
+  
+@media only screen and (max-width: 1144px) {
+ .container-three {
+  padding: 0px 16px;
+  overflow-x:hidden;
+ } 
+}
+
+@media only screen and (max-width: 550px) {
+  .third-part {
+    padding: 32px 0;
+
+  }
+  .third-part::before {
+  height: 950px;   
+  }
+  
 }
