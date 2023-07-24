@@ -131,7 +131,7 @@ p {
   letter-spacing: 1.25px;
 }
 .button-second:hover {
-  color:hotpink;
+  color: hotpink;
 }
 
 .button-second:hover .flechita {
@@ -174,7 +174,7 @@ p {
 .second-page {
   display: flex;
   justify-content: center;
-  background-color:rgba(240, 248, 255, 0.499);
+  background-color: rgba(240, 248, 255, 0.499);
   width: 100%;
   height: auto;
   padding: 16px 0;
@@ -199,80 +199,56 @@ p {
 
 .column-left {
   margin: 10px 10px 40px 0px;
-    }
+}
 .column-right {
   margin: 10px 10px 40px 0px;
 }
- 
- .pleft {
+
+.pleft {
   font-size: 18px;
   margin: 0;
 }
 
 .second-two-columns a {
-  color:blue;
-  text-decoration:none;
+  color: blue;
+  text-decoration: none;
   font-size: 18px;
-
 }
 
 .pright {
   font-size: 18px;
-  }
+}
 
 .image-section {
   width: 100%;
   display: flex;
   justify-content: center;
   background-color: rgba(240, 248, 255, 0.661);
-  }
+}
 
-  .image {
-    width: 100%;
-    max-width: 1144px;
-  }
+.image {
+  width: 100%;
+  max-width: 1144px;
+}
 
-  .articles {
-    display: grid;
-    grid-template-areas:
-    "card slack slack"
-    "phone slack slack"
-    "phone dash dash";
-    grid-gap: 32px;
-    padding: 32px;
-  }
+#credit-card {
+  width: 100%;
+  padding: 20px 30px 20px 30px;
+}
 
-  #credit-card {
-    grid-area: card;
-    width: 100%;
-    box-shadow: 0px 2px 40px rgba(115, 18, 104, 0.311);
-    border-radius: 20px;
-  }
-  
-  #slack {
-    grid-area: slack;
-    width: 100%;
-    box-shadow: 0px 2px 40px rgba(115, 18, 104, 0.311);
-    border-radius:20px;
-  }
+#slack {
+  width: 100%;
+  padding: 20px 30px 20px 30px;
+}
+#phone {
+  width: 100%;
+  padding: 20px 30px 20px 30px;
+}
 
-  #phone {
-    grid-area: phone;
-    width:100%
-      }
-
-  #dash {
-    grid-area: dash;
-    width: 100%;
-    box-shadow: 0px 2px 40px rgba(115, 18, 104, 0.311);
-    border-radius: 20px;
-    }
-  
-  
-
-
-
-
+#dash {
+  width: 100%;
+  padding: 20px 30px 20px 30px;
+}
 
 @media screen and (min-width: 551px) {
   /* cuatro columnas-celular aparece */
@@ -411,17 +387,17 @@ p {
     justify-content: center;
     align-items: flex-start;
     box-sizing: border-box;
-  } 
-  .column-left {
-  width: 50%;
-  box-sizing: border-box;
-  padding: 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
   }
-  
+  .column-left {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+
   .column-right {
     width: 50%;
     box-sizing: border-box;
@@ -435,13 +411,47 @@ p {
   .subtitle {
     margin: 52px 10px 30px 0px;
   }
-  
+
   .commit {
     width: 50%;
     margin-bottom: 16px;
     font-size: 37px;
+  }
 
+  .articles {
+    display: grid;
+    grid-template-areas:
+      "card slack slack"
+      "phone slack slack"
+      "phone dash dash";
+    grid-gap: 32px;
+    padding: 32px;
+  }
 
+  #credit-card {
+    grid-area: card;
+    width: 100%;
+    box-shadow: 0px 2px 40px rgba(115, 18, 104, 0.311);
+    border-radius: 20px;
+  }
+
+  #slack {
+    grid-area: slack;
+    width: 100%;
+    box-shadow: 0px 2px 40px rgba(115, 18, 104, 0.311);
+    border-radius: 20px;
+  }
+
+  #phone {
+    grid-area: phone;
+    width: 100%;
+  }
+
+  #dash {
+    grid-area: dash;
+    width: 100%;
+    box-shadow: 0px 2px 40px rgba(115, 18, 104, 0.311);
+    border-radius: 20px;
   }
 }
 
@@ -492,7 +502,6 @@ p {
     row-gap: 35px;
   }
 
-  
   .second-two-columns .column-left {
     width: 50%;
     padding-right: 16px;
@@ -500,8 +509,8 @@ p {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-     box-sizing: border-box;
-     }
+    box-sizing: border-box;
+  }
 
   .second-two-columns .column-right {
     width: 50%;
@@ -510,10 +519,9 @@ p {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-     box-sizing: border-box;
-      }
+    box-sizing: border-box;
+  }
   .second-two-columns a:hover {
-color: hotpink;
+    color: hotpink;
   }
 }
-
